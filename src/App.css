@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    gap: 20px;
+}
+
+.container-editor, .container-previewer {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    width: 40%;
+    height: 100%;
+    border: 1px solid black;
+    background: #F4F6FF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+textarea {
+    padding: 10px 10px;
+    width: 100%;
+    resize: none;
+    border: none;
+    background: #F4F6FF;
+}
+
+#preview {
+    padding: 10px 10px;
+    min-width: 100%;
+    height: 100%;
+    line-height: 2;
+    overflow-y: auto;
+}
+
+#preview ol {
+    padding-left: 25px;
+}
+
+#preview code {
+    padding: 2px 4px;
+    background: white;
+}
+
+#preview pre {
+    padding: 10px 10px;
+    background: white;
+}
+
+#preview img {
+    max-width: 100%;
+    line-height: 2;
+}
+
+#preview blockquote {
+    padding: 10px 10px;
+    border-left: 4px solid #BCCCDC;
+    margin: 2em 1em;
+    line-height: 1;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid black;
+    background: #024CAA;
+    color: white;
+}
+
+header a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+header a:hover {
+    color: #BCCCDC;
+}
+
+@media screen and (max-width: 376px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .container-editor, .container-previewer {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .container-editor, .container-previewer {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .container-editor, .container-previewer {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .container-editor, .container-previewer {
+        width: 80%;
+    }
+}
